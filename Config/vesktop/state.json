@@ -3,9 +3,9 @@
     "windowBounds": {
         "x": 0,
         "y": 0,
-        "width": 1920,
-        "height": 1080
+        "width": 1876,
+        "height": 991
     },
-    "maximized": false,
+    "maximized": true,
     "minimized": false
 }
