@@ -17,4 +17,7 @@
      lazygit    # optional, LazyVim integrates with it
      nodejs     # needed by several LSPs/plugins
    ];
+
+   # add to your configuration.nix
+   programs.direnv.enable = true;
 }

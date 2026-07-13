@@ -50,6 +50,8 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
+  services.xserver.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "fr";

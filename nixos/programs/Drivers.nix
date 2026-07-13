@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+
   # Enable OpenGL
   hardware.graphics = {
     enable = true;

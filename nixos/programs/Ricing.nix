@@ -28,4 +28,6 @@
   
   programs.zsh.enable = true;
   users.users.chevre.shell = pkgs.zsh;
+
+  services.xserver.displayManager.lightdm.enable = false;
 }
