@@ -10,10 +10,11 @@ window {
 
 button {
   background-color: @surface;
+  color: #ffffff;
   outline-style: none;
-  border: none;
+  border: 3px solid @outline;
 
-  margin: 0 1px;
+  margin: 225px 5px;
   padding: 1.2rem 2rem;
 
   background-repeat: no-repeat;
