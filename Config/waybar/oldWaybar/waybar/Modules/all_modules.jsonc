@@ -1,0 +1,9 @@
+{
+  "include": [
+    "~/.config/waybar/Modules/cpu.jsonc",
+    "~/.config/waybar/Modules/memory.jsonc",
+    "~/.config/waybar/Modules/temperature.jsonc",
+    "~/.config/waybar/Modules/power.jsonc",
+    "~/.config/waybar/Modules/tray.jsonc"
+  ]
+}
