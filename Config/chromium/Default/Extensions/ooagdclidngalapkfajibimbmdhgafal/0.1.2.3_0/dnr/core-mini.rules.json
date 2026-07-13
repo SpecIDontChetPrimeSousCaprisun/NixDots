@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "priority": 449999,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 449999,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 449999,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google-analytics.com^"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 449999,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||scorecardresearch.com^"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 449999,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsystem.amazon.com^"
+    }
+  },
+  {
+    "id": 6,
+    "priority": 549999,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||allowlisted-trusted-cdn.example^"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 549999,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdnjs.cloudflare.com^"
+    }
+  },
+  {
+    "id": 8,
+    "priority": 449999,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "utm_source"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||example.com^"
+    }
+  }
+]

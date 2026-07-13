@@ -1,0 +1,37 @@
+# Global settings
+title-text: ""
+desktop-image: "background.jpg"
+desktop-image-scale-method: "crop"   # or "stretch" / "fitwidth" / "fitheight"
+
+# Solarized palette reference:
+# base03 #002b36  base02 #073642  base01 #586e75  base00 #657b83
+# base0  #839496  base1  #93a1a1  base2  #eee8d5  base3  #fdf6e3
+# yellow #b58900  orange #cb4b16  red    #dc322f  magenta#d33682
+# violet #6c71c4  blue   #268bd2  cyan   #2aa198   green  #859900
+
+terminal-font: "Unifont Regular 16"
+#terminal-box: "terminal_box_*.png"
+
++ boot_menu {
+    left = 20%
+    top = 30%
+    width = 60%
+    height = 40%
+    item_font = "Unifont Regular 16"
+    item_color = "#839496"                # base0
+    selected_item_color = "#b58900"       # yellow accent
+#    selected_item_pixmap_style = "select_*.png"
+    item_height = 32
+    item_padding = 5
+    item_spacing = 5
+}
+
++ label {
+    top = 10%
+    left = 0%
+    width = 100%
+    align = "center"
+    text = "Select an OS to boot"
+    color = "#93a1a1"                     # base1
+    font = "Unifont Regular 20"
+}

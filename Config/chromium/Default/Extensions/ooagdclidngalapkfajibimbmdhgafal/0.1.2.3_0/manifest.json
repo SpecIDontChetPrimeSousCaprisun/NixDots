@@ -1,0 +1,147 @@
+{
+   "action": {
+      "browser_style": false,
+      "default_icon": {
+         "16": "img/ublock16.png",
+         "32": "img/ublock32.png",
+         "64": "img/ublock64.png"
+      },
+      "default_popup": "popup-fenix.html",
+      "default_title": "uBlock Resurrected"
+   },
+   "author": "Raymond Hill & Damir Olejar & contributors",
+   "background": {
+      "service_worker": "js/sw.js",
+      "type": "module"
+   },
+   "commands": {
+      "launch-element-picker": {
+         "description": "__MSG_popupTipPicker__"
+      },
+      "launch-element-zapper": {
+         "description": "__MSG_popupTipZapper__"
+      },
+      "launch-logger": {
+         "description": "__MSG_popupTipLog__"
+      },
+      "open-dashboard": {
+         "description": "__MSG_popupTipDashboard__"
+      },
+      "relax-blocking-mode": {
+         "description": "__MSG_relaxBlockingMode__"
+      },
+      "toggle-cosmetic-filtering": {
+         "description": "__MSG_toggleCosmeticFiltering__"
+      },
+      "toggle-javascript": {
+         "description": "__MSG_toggleJavascript__"
+      },
+      "toggle-newtab": {
+         "description": "Toggle custom new tab page"
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "/js/tester-cosmetic-main.js" ],
+      "match_about_blank": true,
+      "matches": [ "*://adblocktesters.com/*", "*://www.adblocktesters.com/*", "*://adblock-tester.com/*", "*://www.adblock-tester.com/*", "*://adblocktester.pages.dev/*", "*://obfusgated.com/*", "*://www.obfusgated.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "all_frames": true,
+      "css": [ "/css/tester-cosmetic-baits.css" ],
+      "js": [ "/js/tester-cosmetic-baits.js" ],
+      "match_about_blank": true,
+      "matches": [ "*://adblocktesters.com/*", "*://www.adblocktesters.com/*", "*://adblock-tester.com/*", "*://www.adblock-tester.com/*", "*://adblocktester.pages.dev/*", "*://obfusgated.com/*", "*://www.obfusgated.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "exclude_matches": [ "*://chatgpt.com/*", "*://*.chatgpt.com/*" ],
+      "js": [ "/js/vapi.js", "/js/vapi-client.js", "/js/contentscript.js", "/js/smart-content.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "exclude_matches": [ "*://suno.com/*", "*://*.suno.com/*", "*://vkvideo.ru/*", "*://*.vkvideo.ru/*", "*://yandex.com/*", "*://*.yandex.com/*", "*://yandex.ru/*", "*://*.yandex.ru/*", "*://youtube.com/*", "*://*.youtube.com/*", "*://youtube-nocookie.com/*", "*://*.youtube-nocookie.com/*", "*://youtu.be/*", "*://*.youtu.be/*", "*://chatgpt.com/*", "*://*.chatgpt.com/*", "*://grok.com/*", "*://*.grok.com/*" ],
+      "js": [ "/js/video-adblock-generic.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+   }, {
+      "all_frames": true,
+      "css": [ "/css/youtube-adblock.css" ],
+      "js": [ "/js/youtube-adblock-main.js" ],
+      "match_about_blank": true,
+      "matches": [ "*://youtube.com/*", "*://*.youtube.com/*", "*://youtube-nocookie.com/*", "*://*.youtube-nocookie.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "benchmark-extra",
+         "path": "dnr/benchmark-extra.rules.json"
+      }, {
+         "enabled": true,
+         "id": "core-mini",
+         "path": "dnr/core-mini.rules.json"
+      }, {
+         "enabled": true,
+         "id": "static-badware",
+         "path": "dnr/static-badware.rules.json"
+      }, {
+         "enabled": true,
+         "id": "static-core",
+         "path": "dnr/static-core.rules.json"
+      }, {
+         "enabled": true,
+         "id": "static-privacy",
+         "path": "dnr/static-privacy.rules.json"
+      }, {
+         "enabled": true,
+         "id": "static-unbreak",
+         "path": "dnr/static-unbreak.rules.json"
+      }, {
+         "enabled": true,
+         "id": "static-video-ads",
+         "path": "dnr/static-video-ads.rules.json"
+      }, {
+         "enabled": false,
+         "id": "tester-blocklist",
+         "path": "dnr/tester-blocklist.rules.json"
+      }, {
+         "enabled": false,
+         "id": "tester-bait",
+         "path": "dnr/tester-bait.rules.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_extShortDesc__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "img/ublock128.png",
+      "16": "img/ublock16.png",
+      "256": "img/ublock256.png",
+      "32": "img/ublock32.png",
+      "48": "img/ublock48.png",
+      "64": "img/ublock64.png",
+      "96": "img/ublock96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjSvTyD7ui55+GokgyzWTR/VKeTtYof+2P43uh97T9RXF+01a0F+RWmPNyQM4j8q9YQbtxaW8nQKrSUcltuXitVl4uzLHFAC5y7fjQR4zQLdKghyZTlOA5kkoOKNNR8Y5Lq/pesq8FcTfwqM9AnnCw63Y3x4uQvdpyaf4sp7cychJvaa28sKzAcAiuZeLABswYZtNQU1kl8neoEXFmoQ5Tk4SDoQ6q6BAxEwlO9EpwvAhZ157S+TsSDPAEOVXQDiOTIoUut5c/KdZOJ7VW3mKRSvijP9bVihLoUXNIiTut8OuBif0S8i+x3oO+AsXXlrC98UeCzBdp5YoklaP91m5gwIDAQAB",
+   "manifest_version": 3,
+   "name": "uBlock Resurrected",
+   "options_page": "dashboard.html",
+   "permissions": [ "activeTab", "contextMenus", "declarativeNetRequest", "declarativeNetRequestFeedback", "idle", "privacy", "scripting", "storage", "tabs", "unlimitedStorage", "webNavigation", "webRequest" ],
+   "short_name": "uBlockᵣ",
+   "storage": {
+      "managed_schema": "managed_schema.json"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2.3",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/web_accessible_resources/*", "/js/epicker-ui-bundle.js", "/css/epicker-ui.css", "/js/vapi-content.js", "/zapper-ui.html", "/css/zapper-ui.css", "/js/scripting/zapper-ui.js", "/js/scripting/tool-overlay-ui.js", "/js/scripting/tool-overlay.js", "/js/scripting/zapper.js", "/js/scripting/dom.js", "/js/scripting/ext.js", "/picker-ui.html", "/css/picker-ui.css", "/js/scripting/picker-ui.js", "/js/scripting/picker.js", "/assets/assets.json" ]
+   } ]
+}

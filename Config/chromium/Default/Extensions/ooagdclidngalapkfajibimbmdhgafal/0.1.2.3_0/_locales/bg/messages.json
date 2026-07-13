@@ -1,0 +1,1410 @@
+{
+   "1pApplyChanges": {
+      "description": "English: Apply changes",
+      "message": "Прилагане на промените"
+   },
+   "1pEnableMyFiltersLabel": {
+      "description": "Label for the checkbox use to enable/disable 'My filters' list",
+      "message": "Активиране на моите потребителски филтри"
+   },
+   "1pExport": {
+      "description": "Button in the 'My filters' pane",
+      "message": "Изнасяне..."
+   },
+   "1pExportFilename": {
+      "description": "English: my-ublock-static-filters_{{datetime}}.txt",
+      "message": "ublock-мои-филтри_{{datetime}}.txt"
+   },
+   "1pImport": {
+      "description": "Button in the 'My filters' pane",
+      "message": "Внасяне и добавяне..."
+   },
+   "1pPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Мои филтри"
+   },
+   "1pTrustMyFiltersLabel": {
+      "description": "Label for the checkbox use to trust the content of 'My filters' list",
+      "message": "Разрешаване на потребителски филтри, изискващи доверие"
+   },
+   "1pTrustWarning": {
+      "description": "Warning against copy-pasting filters from random sources",
+      "message": "Не добавяйте филтри от ненадеждни източници."
+   },
+   "3pApplyChanges": {
+      "description": "English: Apply changes",
+      "message": "Прилагане на промените"
+   },
+   "3pAutoUpdatePrompt1": {
+      "description": "A checkbox in the _3rd-party filters_ pane",
+      "message": "Автоматично обновяване на филтрите"
+   },
+   "3pExternalListObsolete": {
+      "description": "used as a tooltip for the out-of-date icon beside a list",
+      "message": "Остарял"
+   },
+   "3pExternalListsHint": {
+      "description": "Short information about how to use the textarea to import external filter lists by URL",
+      "message": "Един адрес на ред. Невалидните адреси ще бъдат игнорирани."
+   },
+   "3pGroupAds": {
+      "description": "Filter lists section name",
+      "message": "Реклами"
+   },
+   "3pGroupAnnoyances": {
+      "description": "Filter lists section name",
+      "message": "Досадни неща"
+   },
+   "3pGroupCookies": {
+      "description": "Filter lists section name",
+      "message": "Известия за бисквитки"
+   },
+   "3pGroupCustom": {
+      "description": "Filter lists section name",
+      "message": "Потребителски"
+   },
+   "3pGroupDefault": {
+      "description": "Filter lists section name",
+      "message": "Вградени"
+   },
+   "3pGroupMalware": {
+      "description": "Filter lists section name",
+      "message": "Защита от зловреден софтуер, сигурност"
+   },
+   "3pGroupMultipurpose": {
+      "description": "Filter lists section name",
+      "message": "Многоцелеви"
+   },
+   "3pGroupPrivacy": {
+      "description": "Filter lists section name",
+      "message": "Поверителност"
+   },
+   "3pGroupRegions": {
+      "description": "Filter lists section name",
+      "message": "Региони, езици"
+   },
+   "3pGroupSocial": {
+      "description": "Filter lists section name",
+      "message": "Социални джаджи"
+   },
+   "3pIgnoreGenericCosmeticFilters": {
+      "description": "This will cause uBO to ignore all generic cosmetic filters.",
+      "message": "Игнориране на общите козметични филтри"
+   },
+   "3pIgnoreGenericCosmeticFiltersInfo": {
+      "description": "Describes the purpose of the 'Ignore generic cosmetic filters' feature.",
+      "message": "Общокозметични са филтрите, предназначени за прилагане във всички сайтове. Разрешаването на тази опция ще премахне натоварването на паметта и процесора, добавено към уеб страниците в резултат на обработката на общите козметични филтри."
+   },
+   "3pImport": {
+      "description": "The label for the checkbox used to import external filter lists",
+      "message": "Внасяне..."
+   },
+   "3pLastUpdate": {
+      "description": "used as a tooltip for the clock icon beside a list",
+      "message": "Последно обновяване: {{ago}}.\nЩракнете за принудително обновяване."
+   },
+   "3pListsOfBlockedHostsHeader": {
+      "description": "English: Lists of blocked hosts",
+      "message": "Списъци на блокираните хостове"
+   },
+   "3pListsOfBlockedHostsPerListStats": {
+      "description": "Appears aside each filter list in the _3rd-party filters_ pane",
+      "message": "ползвани {{used}} от общо {{total}}"
+   },
+   "3pListsOfBlockedHostsPrompt": {
+      "description": "Appears at the top of the _3rd-party filters_ pane",
+      "message": "{{netFilterCount}} мрежови филтри ＋ {{cosmeticFilterCount}} козметични филтри от:"
+   },
+   "3pNetworkError": {
+      "description": "used as a tooltip for error icon beside a list",
+      "message": "Грешка в мрежата възпрепятства обновяването на ресурса."
+   },
+   "3pPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Филтри"
+   },
+   "3pParseAllABPHideFiltersInfo": {
+      "description": "Describes the purpose of the 'Parse and enforce cosmetic filters' feature.",
+      "message": "Козметичните филтри служат за скриване на елементи в уебстраницата, които се считат за визуално неприятни и които не могат да бъдат блокирани от механизмите за филтриране, базирани на мрежови заявки."
+   },
+   "3pParseAllABPHideFiltersPrompt1": {
+      "description": "English: Parse and enforce Adblock+ element hiding filters.",
+      "message": "Анализиране и прилагане на козметичните филтри"
+   },
+   "3pPurgeAll": {
+      "description": "A button in the in the _3rd-party filters_ pane",
+      "message": "Изчистване на кеш паметта"
+   },
+   "3pSuspendUntilListsAreLoaded": {
+      "description": "A checkbox in the 'Filter lists' pane",
+      "message": "Преустановяване на мрежовата дейност, докато се заредят всички списъци с филтри"
+   },
+   "3pUpdateNow": {
+      "description": "A button in the in the _3rd-party filters_ pane",
+      "message": "Обновяване"
+   },
+   "3pUpdating": {
+      "description": "used as a tooltip for the spinner icon beside a list",
+      "message": "Обновяване..."
+   },
+   "3pViewContent": {
+      "description": "used as a tooltip for eye icon beside a list",
+      "message": "Преглед на съдържанието"
+   },
+   "GB": {
+      "description": "short for 'gigabytes'",
+      "message": "ГБ"
+   },
+   "KB": {
+      "description": "short for 'kilobytes'",
+      "message": "КБ"
+   },
+   "MB": {
+      "description": "short for 'megabytes'",
+      "message": "МБ"
+   },
+   "aboutBackupDataButton": {
+      "description": "Text for button to create a backup of all settings",
+      "message": "Изнасяне във файл..."
+   },
+   "aboutBackupFilename": {
+      "description": "English: my-ublock-backup_{{datetime}}.txt",
+      "message": "ublock-всички-настройки_{{datetime}}.txt"
+   },
+   "aboutCDNs": {
+      "description": "Shown in the About pane",
+      "message": "Собствените списъци с филтри на uBO се хостват свободно на следните \u003Ca href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN-и\u003C/a>:"
+   },
+   "aboutCDNsInfo": {
+      "description": "Shown in the About pane",
+      "message": "Ще бъде използван случайно избран CDN, когато трябва да се обнови списък с филтри"
+   },
+   "aboutCode": {
+      "description": "English: Source code (GPLv3)",
+      "message": "Изходен код (GPLv3)"
+   },
+   "aboutDependencies": {
+      "description": "Shown in the About pane",
+      "message": "Външни зависимости (съвместими с GPLv3):"
+   },
+   "aboutPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Относно"
+   },
+   "aboutResetDataButton": {
+      "description": "English: Reset to default settings...",
+      "message": "Възстановяване на първоначалните настройки..."
+   },
+   "aboutResetDataConfirm": {
+      "description": "Message asking user to confirm reset",
+      "message": "Всички настройки ще бъдат премахнати и uBlock₀ ще се рестартира.\n\nВръщане на uBlock₀ към стандартните настройки?"
+   },
+   "aboutRestoreDataButton": {
+      "description": "English: Restore from file...",
+      "message": "Възстановяване от файл..."
+   },
+   "aboutRestoreDataConfirm": {
+      "description": "Message asking user to confirm restore",
+      "message": "Всички настройки ще бъдат презаписани с данни, архивирани на {{time}} и uBlock₀ ще се рестартира.\n\nПрезаписване на съществуващите настройки, използвайки архивираните данни?"
+   },
+   "aboutRestoreDataError": {
+      "description": "Message to display when an error occurred during restore",
+      "message": "Данните не могат да бъдат прочетени или са невалидни"
+   },
+   "action": {
+      "description": "Table column header for action type (block/allow)",
+      "message": "Действие"
+   },
+   "advancedSettingsPageName": {
+      "description": "Title for the advanced settings page",
+      "message": "Разширени настройки"
+   },
+   "advancedSettingsWarning": {
+      "description": "A warning to users at the top of 'Advanced settings' page",
+      "message": "Внимание! Променяте настройките на свой собствен риск."
+   },
+   "assetViewerPageName": {
+      "description": "Title for the asset viewer page",
+      "message": "uBlock₀ — Активи"
+   },
+   "clear": {
+      "description": "Generic clear button label",
+      "message": "Изчисти"
+   },
+   "clickToLoad": {
+      "description": "Message used in frame placeholders",
+      "message": "Щракнете, за да се зареди"
+   },
+   "cloudDeviceNamePrompt": {
+      "description": "used as a prompt for the user to provide a custom device name",
+      "message": "Име на устройството:"
+   },
+   "cloudNoData": {
+      "description": "",
+      "message": "..."
+   },
+   "cloudPull": {
+      "description": "tooltip",
+      "message": "Внасяне от облачно хранилище"
+   },
+   "cloudPullAndMerge": {
+      "description": "tooltip",
+      "message": "Внасяне на настройки от облачно хранилище и обединяване с текущите"
+   },
+   "cloudPush": {
+      "description": "tooltip",
+      "message": "Изнасяне в облачно хранилище"
+   },
+   "contextMenuBlockElementInFrame": {
+      "description": "An entry in the browser's contextual menu",
+      "message": "Блокиране на елемента в рамката..."
+   },
+   "contextMenuSubscribeToList": {
+      "description": "An entry in the browser's contextual menu",
+      "message": "Абониране за списъка с филтри..."
+   },
+   "contextMenuTemporarilyAllowLargeMediaElements": {
+      "description": "A context menu entry, present when large media elements have been blocked on the current site",
+      "message": "Временно разрешаване на големи мултимедийни елементи"
+   },
+   "contextMenuViewSource": {
+      "description": "A context menu entry, to view the source code of the target resource",
+      "message": "Преглед на изходния код…"
+   },
+   "dashboardName": {
+      "description": "English: uBlock₀ — Dashboard",
+      "message": "uBlock₀ — Табло"
+   },
+   "dashboardUnsavedWarning": {
+      "description": "A warning in the dashboard when navigating away from unsaved changes",
+      "message": "Внимание! Има незапазени промени"
+   },
+   "dashboardUnsavedWarningIgnore": {
+      "description": "Label for button to ignore unsaved changes",
+      "message": "Игнориране"
+   },
+   "dashboardUnsavedWarningStay": {
+      "description": "Label for button to prevent navigating away from unsaved changes",
+      "message": "Оставане"
+   },
+   "docblockedBack": {
+      "description": "English: Go back",
+      "message": "Назад"
+   },
+   "docblockedClose": {
+      "description": "English: Close this window",
+      "message": "Затваряне на прозореца"
+   },
+   "docblockedDisable": {
+      "description": "Button text to navigate to the blocked page",
+      "message": "Продължаване"
+   },
+   "docblockedDisablePermanent": {
+      "description": "English: Permanently",
+      "message": "Постоянно"
+   },
+   "docblockedDisableTemporary": {
+      "description": "English: Temporarily",
+      "message": "Временно"
+   },
+   "docblockedDontWarn": {
+      "description": "Label for checkbox in document-blocked page",
+      "message": "Без повторно предупреждение за този сайт"
+   },
+   "docblockedFoundIn": {
+      "description": "English: List of filter list names follows",
+      "message": "Намерен в:"
+   },
+   "docblockedNoParamsPrompt": {
+      "description": "label to be used for the parameter-less URL: https://cloud.githubusercontent.com/assets/585534/9832014/bfb1b8f0-593b-11e5-8a27-fba472a5529a.png",
+      "message": "без параметри"
+   },
+   "docblockedProceed": {
+      "description": "English: Disable strict blocking for {{hostname}} ...",
+      "message": "Изключване на строгото блокиране за {{hostname}}"
+   },
+   "docblockedPrompt1": {
+      "description": "Used in the strict-blocking page",
+      "message": "uBlock Origin предотврати зареждането на страницата:"
+   },
+   "docblockedPrompt2": {
+      "description": "Used in the strict-blocking page",
+      "message": "Блокиращ филтър"
+   },
+   "docblockedReasonDisreputable": {
+      "description": "An actual reason why a page was blocked",
+      "message": "Неблагонадеждна"
+   },
+   "docblockedReasonLabel": {
+      "description": "The label which prepend the actual reason why a page was blocked",
+      "message": "Причина:"
+   },
+   "docblockedReasonMalicious": {
+      "description": "An actual reason why a page was blocked",
+      "message": "Злонамерена"
+   },
+   "docblockedReasonTracker": {
+      "description": "An actual reason why a page was blocked",
+      "message": "Проследяване"
+   },
+   "docblockedRedirectPrompt": {
+      "description": "Text warning about an incoming redirect",
+      "message": "Блокираната страница иска да Ви пренасочи към друг сайт. Ако изберете да продължите, ще отидете директно на: {{url}}"
+   },
+   "docblockedTitle": {
+      "description": "Used as a title for the document-blocked page",
+      "message": "Страницата е блокирана"
+   },
+   "dummy": {
+      "description": "so we dont need to deal with comma for last entry",
+      "message": "Това поле трябва да бъде последното"
+   },
+   "elapsedManyDaysAgo": {
+      "description": "English: {{value}} days ago",
+      "message": "преди {{value}} дни"
+   },
+   "elapsedManyHoursAgo": {
+      "description": "English: {{value}} hours ago",
+      "message": "преди {{value}} часа"
+   },
+   "elapsedManyMinutesAgo": {
+      "description": "English: {{value}} minutes ago",
+      "message": "преди {{value}} минути"
+   },
+   "elapsedOneDayAgo": {
+      "description": "English: a day ago",
+      "message": "преди ден"
+   },
+   "elapsedOneHourAgo": {
+      "description": "English: an hour ago",
+      "message": "преди час"
+   },
+   "elapsedOneMinuteAgo": {
+      "description": "English: a minute ago",
+      "message": "преди минута"
+   },
+   "errorCantConnectTo": {
+      "description": "English: Network error: {{msg}}",
+      "message": "Грешка в мрежата: {{msg}}"
+   },
+   "extName": {
+      "description": "extension name.",
+      "message": "uBlock Origin"
+   },
+   "extShortDesc": {
+      "description": "this will be in the Chrome web store: must be 132 characters or less",
+      "message": "Най-накрая, ефективен блокер. Щадящ процесора и паметта."
+   },
+   "fennecMenuItemBlockingOff": {
+      "description": "Firefox-specific: appears as 'uBlock₀ (off)'",
+      "message": "изключен"
+   },
+   "filter": {
+      "description": "Table column header for filter text",
+      "message": "Филтър"
+   },
+   "genericApplyChanges": {
+      "description": "for generic 'Apply changes' buttons",
+      "message": "Прилагане на промените"
+   },
+   "genericBytes": {
+      "description": "",
+      "message": "байта"
+   },
+   "genericCopyToClipboard": {
+      "description": "Label for buttons used to copy something to the clipboard",
+      "message": "Копиране в клипборда"
+   },
+   "genericMergeViewScrollLock": {
+      "description": "Tooltip for the button used to lock scrolling between the views in the 'My rules' pane",
+      "message": "Превключване на заключеното превъртане"
+   },
+   "genericRevert": {
+      "description": "for generic 'Revert' buttons",
+      "message": "Връщане"
+   },
+   "genericSelectAll": {
+      "description": "Label for buttons used to select all text in editor",
+      "message": "Избиране на всичко"
+   },
+   "genericSubmit": {
+      "description": "for generic 'Submit' buttons",
+      "message": "Изпращане"
+   },
+   "line": {
+      "description": "Table column header for line number",
+      "message": "Ред"
+   },
+   "linterMainReport": {
+      "description": "Summary of number of errors as reported by the linter ",
+      "message": "Грешки: {{count}}"
+   },
+   "logAll": {
+      "description": "Appears in the logger's tab selector",
+      "message": "Всички"
+   },
+   "logBehindTheScene": {
+      "description": "Pretty name for behind-the-scene network requests",
+      "message": "Скрити"
+   },
+   "logFilterPrompt": {
+      "description": "Placeholder string for logger output filtering input field",
+      "message": "филтриране на записи"
+   },
+   "logRequestsHeaderDomain": {
+      "description": "English: Domain",
+      "message": "Домейн"
+   },
+   "logRequestsHeaderFilter": {
+      "description": "English: Filter",
+      "message": "Филтър"
+   },
+   "logRequestsHeaderType": {
+      "description": "English: Type",
+      "message": "Тип"
+   },
+   "logRequestsHeaderURL": {
+      "description": "English: URL",
+      "message": "URL адрес"
+   },
+   "loggerClearTip": {
+      "description": "Tooltip for the eraser in the logger page; used to blank the content of the logger",
+      "message": "Изчистване на заявките"
+   },
+   "loggerCurrentTab": {
+      "description": "Appears in the logger's tab selector",
+      "message": "Последно активен раздел"
+   },
+   "loggerDomInspectorTip": {
+      "description": "Tooltip for the DOM inspector button in the logger page",
+      "message": "Превключване на DOM инспектора"
+   },
+   "loggerEntryDetailsContext": {
+      "description": "Label to identify a context field (typically a hostname)",
+      "message": "Контекст"
+   },
+   "loggerEntryDetailsFilter": {
+      "description": "Label to identify a filter field",
+      "message": "Филтър"
+   },
+   "loggerEntryDetailsFilterList": {
+      "description": "Label to identify a filter list field",
+      "message": "Списък с филтри"
+   },
+   "loggerEntryDetailsHeader": {
+      "description": "Small header to identify the 'Details' pane for a specific logger entry",
+      "message": "Детайли"
+   },
+   "loggerEntryDetailsPartyness": {
+      "description": "Label to identify a field providing partyness information",
+      "message": "Страна"
+   },
+   "loggerEntryDetailsRootContext": {
+      "description": "Label to identify a root context field (typically a hostname)",
+      "message": "Основен контекст"
+   },
+   "loggerEntryDetailsRule": {
+      "description": "Label to identify a rule field",
+      "message": "Правило"
+   },
+   "loggerEntryDetailsType": {
+      "description": "Label to identify the type of an entry",
+      "message": "Тип"
+   },
+   "loggerEntryDetailsURL": {
+      "description": "Label to identify the URL of an entry",
+      "message": "Адрес"
+   },
+   "loggerExportEncodeMarkdown": {
+      "description": "Label for radio-button to pick export text format",
+      "message": "Markdown"
+   },
+   "loggerExportEncodePlain": {
+      "description": "Label for radio-button to pick export text format",
+      "message": "Обикновен"
+   },
+   "loggerExportFormatList": {
+      "description": "Label for radio-button to pick export format",
+      "message": "Списък"
+   },
+   "loggerExportFormatTable": {
+      "description": "Label for radio-button to pick export format",
+      "message": "Таблица"
+   },
+   "loggerInfoTip": {
+      "description": "Tooltip for the top-right info label in the logger page",
+      "message": "uBlock Origin wiki: Дневникът със заявки"
+   },
+   "loggerPauseTip": {
+      "description": "Tooltip for the pause button in the logger page",
+      "message": "Пауза на заявките (отхвърляне на входящите данни)"
+   },
+   "loggerPopupPanelTip": {
+      "description": "Tooltip for the popup panel button in the logger page",
+      "message": "Превключване на изскачащия панел"
+   },
+   "loggerReloadTip": {
+      "description": "Tooltip for the reload button in the logger page",
+      "message": "Презареждане съдържанието на раздела"
+   },
+   "loggerRowFiltererBuiltin1p": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "1-ви страни"
+   },
+   "loggerRowFiltererBuiltin3p": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "3-ти страни"
+   },
+   "loggerRowFiltererBuiltinAllowed": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "позволени"
+   },
+   "loggerRowFiltererBuiltinBlocked": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "блокирани"
+   },
+   "loggerRowFiltererBuiltinEventful": {
+      "description": "A keyword in the built-in row filtering expression: all items corresponding to uBO doing something (blocked, allowed, redirected, etc.)",
+      "message": "изпълнен със събития"
+   },
+   "loggerRowFiltererBuiltinModified": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "променен"
+   },
+   "loggerRowFiltererBuiltinNot": {
+      "description": "A keyword in the built-in row filtering expression",
+      "message": "Изкл."
+   },
+   "loggerRowFiltererBuiltinTip": {
+      "description": "Tooltip for the button to bring up logger output filtering options",
+      "message": "Опции за филтриране"
+   },
+   "loggerRowFiltererButtonTip": {
+      "description": "Tooltip for the row filterer button in the logger page",
+      "message": "Превключване на филтрирането"
+   },
+   "loggerSettingDiscardPrompt": {
+      "description": "Logger setting: A sentence to describe the purpose of the settings below",
+      "message": "Записите в дневника, които не отговарят на трите условия по-долу ще бъдат автоматично отхвърлени:"
+   },
+   "loggerSettingHideColumnContext": {
+      "description": "A label for the context column",
+      "message": "{{input}} Контекст"
+   },
+   "loggerSettingHideColumnFilter": {
+      "description": "A label for the filter or rule column",
+      "message": "{{input}} Филтър/правило"
+   },
+   "loggerSettingHideColumnPartyness": {
+      "description": "A label for the partyness column",
+      "message": "{{input}} Страна"
+   },
+   "loggerSettingHideColumnTime": {
+      "description": "A label for the time column",
+      "message": "{{input}} Време"
+   },
+   "loggerSettingHideColumnsPrompt": {
+      "description": "Logger settings: a sentence to describe the purpose of the checkboxes below",
+      "message": "Скриване на колони:"
+   },
+   "loggerSettingPerEntryLineCount": {
+      "description": "A logger setting",
+      "message": "Използване на {{input}} реда за записи в разширен вертикален режим"
+   },
+   "loggerSettingPerEntryMaxAge": {
+      "description": "A logger setting",
+      "message": "Запазване на записите от последните {{input}} минути"
+   },
+   "loggerSettingPerTabMaxEntries": {
+      "description": "A logger setting",
+      "message": "Запазване най-много на {{input}} записа за раздел"
+   },
+   "loggerSettingPerTabMaxLoads": {
+      "description": "A logger setting",
+      "message": "Запазване най-много на {{input}} зареждания на страница за раздел"
+   },
+   "loggerStaticFilteringFinderSentence1": {
+      "description": "Below this sentence, the filter list(s) in which the filter was found",
+      "message": "Статичният филтър \u003Ccode>{{filter}}\u003C/code> е намерен в:"
+   },
+   "loggerStaticFilteringFinderSentence2": {
+      "description": "Message to show when a filter cannot be found in any filter lists",
+      "message": "Статичният филтър не е намерен в никой от активните списъци с филтри"
+   },
+   "loggerStaticFilteringHeader": {
+      "description": "Small header to identify the static filtering section",
+      "message": "Статично филтриране"
+   },
+   "loggerStaticFilteringSentence": {
+      "description": "Used in the static filtering wizard",
+      "message": "{{action}} на мрежови заявки от {{type}} за адрес, съвпадащ с {{br}}{{url}}{{br}}и произлизащ от {{origin}},{{importance}} има филтър със съвпадащи изключения."
+   },
+   "loggerStaticFilteringSentencePartAllow": {
+      "description": "Used in the static filtering wizard",
+      "message": "Разрешаване"
+   },
+   "loggerStaticFilteringSentencePartAnyOrigin": {
+      "description": "Used in the static filtering wizard",
+      "message": "където и да е"
+   },
+   "loggerStaticFilteringSentencePartAnyType": {
+      "description": "Used in the static filtering wizard",
+      "message": "всеки тип"
+   },
+   "loggerStaticFilteringSentencePartBlock": {
+      "description": "Used in the static filtering wizard",
+      "message": "Блокиране"
+   },
+   "loggerStaticFilteringSentencePartImportant": {
+      "description": "Used in the static filtering wizard",
+      "message": "дори ако"
+   },
+   "loggerStaticFilteringSentencePartNotImportant": {
+      "description": "Used in the static filtering wizard",
+      "message": "с изключение, когато"
+   },
+   "loggerStaticFilteringSentencePartOrigin": {
+      "description": "Used in the static filtering wizard",
+      "message": "\"{{origin}}\""
+   },
+   "loggerStaticFilteringSentencePartType": {
+      "description": "Used in the static filtering wizard",
+      "message": "тип \"{{type}}\""
+   },
+   "loggerURLFilteringContextLabel": {
+      "description": "Label for the context selector",
+      "message": "Контекст:"
+   },
+   "loggerURLFilteringHeader": {
+      "description": "Small header to identify the dynamic URL filtering section",
+      "message": "Правило за адрес"
+   },
+   "loggerURLFilteringTypeLabel": {
+      "description": "Label for the type selector",
+      "message": "Тип:"
+   },
+   "loggerUnpauseTip": {
+      "description": "Tooltip for the play button in the logger page",
+      "message": "Включване на заявките"
+   },
+   "matchedRulesClickRefresh": {
+      "description": "Status text prompting user to click refresh",
+      "message": "Щракнете за опресняване"
+   },
+   "matchedRulesCountLabel": {
+      "description": "Status text showing the count of matched rules",
+      "message": "{{count}} правила"
+   },
+   "matchedRulesDescription": {
+      "description": "Description text for the matched rules page",
+      "message": "Правилата, съвпаднали на този раздел, се появяват след ръчно опресняване."
+   },
+   "matchedRulesError": {
+      "description": "Status text when an error occurs loading matched rules",
+      "message": "Грешка при зареждане на правилата"
+   },
+   "matchedRulesLoading": {
+      "description": "Status text while matched rules are loading",
+      "message": "Зареждане..."
+   },
+   "matchedRulesPageName": {
+      "description": "Title for the matched rules page",
+      "message": "Съвпаднали правила"
+   },
+   "matchedRulesUnknownId": {
+      "description": "Status text when rule ID is unknown",
+      "message": "Неизвестно ID на правило"
+   },
+   "newtabDefault": {
+      "description": "Button label when a search engine is already the default",
+      "message": "✓ По подразбиране"
+   },
+   "newtabFooter": {
+      "description": "Footer text on the new tab page",
+      "message": "Самостоятелно търсене. Без външни скриптове, проследяващ код или рекламни блокове."
+   },
+   "newtabHint": {
+      "description": "Hint text on the new tab page",
+      "message": "Използвайте настройките от таблото, за да се върнете към оригиналната страница на Chrome."
+   },
+   "newtabMoreFromGoogle": {
+      "description": "Heading for the extended Google apps list",
+      "message": "Още от Google"
+   },
+   "newtabNoScript": {
+      "description": "Noscript fallback message on the new tab page",
+      "message": "Тази самостоятелна страница изисква JavaScript, за да изпраща заявки към избрания доставчик."
+   },
+   "newtabSearch": {
+      "description": "Submit button text on the new tab page",
+      "message": "Търсене"
+   },
+   "newtabSearchQuery": {
+      "description": "Label for the search query input",
+      "message": "Търсеща заявка"
+   },
+   "newtabSetDefault": {
+      "description": "Button label to set a search engine as default",
+      "message": "Задай като подразбиране"
+   },
+   "newtabSubtitle": {
+      "description": "Subtitle for the new tab page",
+      "message": "Изберете инструмент за търсене, въведете заявка и отворете резултати директно от доставчика."
+   },
+   "newtabTitle": {
+      "description": "Title for the new tab page",
+      "message": "Инструменти за търсене"
+   },
+   "noDashboardNotice": {
+      "description": "Notice shown when the dashboard access has been disabled by the administrator",
+      "message": "Администраторът премахна достъпа до таблото"
+   },
+   "noMatchedRules": {
+      "description": "Empty state message for matched rules page",
+      "message": "Все още няма съвпаднали правила."
+   },
+   "pickerContextMenuEntry": {
+      "description": "An entry in the browser's contextual menu",
+      "message": "Блокиране на елемент…"
+   },
+   "pickerCosmeticFilters": {
+      "description": "English: Cosmetic filters",
+      "message": "Козметични филтри"
+   },
+   "pickerCosmeticFiltersHint": {
+      "description": "English: Click, Ctrl-click",
+      "message": "Щракване, Ctrl + щракване"
+   },
+   "pickerCreate": {
+      "description": "English: Create",
+      "message": "Създаване"
+   },
+   "pickerKeywordAnd": {
+      "description": "Element picker AND keyword field label",
+      "message": "Ключови думи И"
+   },
+   "pickerKeywordConditional": {
+      "description": "Element picker checkbox for keyword-conditional blocking",
+      "message": "Блокирай само когато ключовите думи присъстват"
+   },
+   "pickerKeywordOr": {
+      "description": "Element picker OR keyword field label",
+      "message": "Ключови думи ИЛИ"
+   },
+   "pickerNetFilters": {
+      "description": "English: header for a type of filter in the element picker dialog",
+      "message": "Мрежови филтри"
+   },
+   "pickerPick": {
+      "description": "English: Pick",
+      "message": "Нов избор"
+   },
+   "pickerPreview": {
+      "description": "Element picker preview mode: will cause the elements matching the current filter to be removed from the page",
+      "message": "Преглед"
+   },
+   "pickerPreviewUndo": {
+      "description": "Button text to undo preview mode in the element picker",
+      "message": "Отмяна"
+   },
+   "pickerQuit": {
+      "description": "English: Quit",
+      "message": "Отказ"
+   },
+   "popup1pScriptRulePrompt": {
+      "description": "",
+      "message": "Скриптове от 1-ви страни"
+   },
+   "popup3pAnyRulePrompt": {
+      "description": "",
+      "message": "3-ти страни"
+   },
+   "popup3pFrameFilter": {
+      "description": "Appears as an option to filter out firewall rows",
+      "message": "рамка"
+   },
+   "popup3pFrameRulePrompt": {
+      "description": "",
+      "message": "Рамки от 3-ти страни"
+   },
+   "popup3pPassiveRulePrompt": {
+      "description": "",
+      "message": "CSS/изображения от 3-ти страни"
+   },
+   "popup3pScriptFilter": {
+      "description": "Appears as an option to filter out firewall rows",
+      "message": "скрипт"
+   },
+   "popup3pScriptRulePrompt": {
+      "description": "",
+      "message": "Скриптове от 3-ти страни"
+   },
+   "popupAnyRulePrompt": {
+      "description": "",
+      "message": "Всички"
+   },
+   "popupBlockedOnThisPagePrompt": {
+      "description": "English: on this page",
+      "message": "на тази страница"
+   },
+   "popupBlockedOnThisPage_v2": {
+      "description": "For the new mobile-friendly popup design",
+      "message": "Блокирани на тази страница"
+   },
+   "popupBlockedRequestPrompt": {
+      "description": "English: requests blocked",
+      "message": "блокирани заявки"
+   },
+   "popupBlockedSinceInstallPrompt": {
+      "description": "English: since install",
+      "message": "общо досега"
+   },
+   "popupBlockedSinceInstall_v2": {
+      "description": "For the new mobile-friendly popup design",
+      "message": "Блокирани общо досега"
+   },
+   "popupBlockedStats": {
+      "description": "Example: 15 (13%)",
+      "message": "{{count}} или {{percent}}%"
+   },
+   "popupDomainsConnected_v2": {
+      "description": "For the new mobile-friendly popup design",
+      "message": "Свързани домейни"
+   },
+   "popupHitDomainCount": {
+      "description": "appears in popup",
+      "message": "{{count}} от {{total}}"
+   },
+   "popupHitDomainCountPrompt": {
+      "description": "appears in popup",
+      "message": "свързани домейни"
+   },
+   "popupImageRulePrompt": {
+      "description": "",
+      "message": "Изображения"
+   },
+   "popupInlineScriptRulePrompt": {
+      "description": "",
+      "message": "Вградени скриптове"
+   },
+   "popupLessButton_v2": {
+      "description": "Label to be used to hide popup panel sections",
+      "message": "По-малко"
+   },
+   "popupMoreButton_v2": {
+      "description": "Label to be used to show popup panel sections",
+      "message": "Още"
+   },
+   "popupNoCosmeticFiltering_v2": {
+      "description": "Caption for the no-cosmetic-filtering per-site switch",
+      "message": "Козметично филтриране"
+   },
+   "popupNoLargeMedia_v2": {
+      "description": "Caption for the no-large-media per-site switch",
+      "message": "Големи мултимедийни елементи"
+   },
+   "popupNoPopups_v2": {
+      "description": "Caption for the no-popups per-site switch",
+      "message": "Изкачащи прозорци"
+   },
+   "popupNoRemoteFonts_v2": {
+      "description": "Caption for the no-remote-fonts per-site switch",
+      "message": "Външни шрифтове"
+   },
+   "popupNoScripting_v2": {
+      "description": "Caption for the no-scripting per-site switch",
+      "message": "JavaScript"
+   },
+   "popupOr": {
+      "description": "English: or",
+      "message": "или"
+   },
+   "popupPowerSwitchInfo": {
+      "description": "English: Click: disable/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page.",
+      "message": "Щракване: изключва/включва uBlock₀ за този сайт.\n\nCtrl + щракване: изключва uBlock₀ само за тази страница."
+   },
+   "popupPowerSwitchInfo1": {
+      "description": "Message to be read by screen readers",
+      "message": "Щракване: изключва uBlock₀ за този сайт.\n\nCtrl + щракване: изключва uBlock₀ само за тази страница."
+   },
+   "popupPowerSwitchInfo2": {
+      "description": "Message to be read by screen readers",
+      "message": "Щракнете, за да включите uBlock₀ за този сайт."
+   },
+   "popupTipDashboard": {
+      "description": "English: Click to open the dashboard",
+      "message": "Табло с настройки"
+   },
+   "popupTipGlobalRules": {
+      "description": "Tooltip when hovering the top-most cell of the global-rules column.",
+      "message": "Глобални правила: колона с правила, приложими към всички сайтове."
+   },
+   "popupTipLocalRules": {
+      "description": "Tooltip when hovering the top-most cell of the local-rules column.",
+      "message": "Локални правила: колона с правила, приложими само към текущият сайт. Локалните правила заместват глобалните."
+   },
+   "popupTipLog": {
+      "description": "Tooltip used for the logger icon in the panel",
+      "message": "Преглед на дневника със заявки"
+   },
+   "popupTipNoCosmeticFiltering": {
+      "description": "Tooltip for the no-cosmetic-filtering per-site switch",
+      "message": "Превключване на козметичното филтриране за този сайт"
+   },
+   "popupTipNoCosmeticFiltering1": {
+      "description": "Tooltip for the no-cosmetic-filtering per-site switch",
+      "message": "Щракнете, за да изключите козметичните филтри за този сайт"
+   },
+   "popupTipNoCosmeticFiltering2": {
+      "description": "Tooltip for the no-cosmetic-filtering per-site switch",
+      "message": "Щракнете, за да включите козметичните филтри за този сайт"
+   },
+   "popupTipNoLargeMedia": {
+      "description": "Tooltip for the no-large-media per-site switch",
+      "message": "Превключване блокирането на големи мултимедийни елементи за този сайт"
+   },
+   "popupTipNoLargeMedia1": {
+      "description": "Tooltip for the no-large-media per-site switch",
+      "message": "Щракнете, за да блокирате големите мултимедийни елементи за този сайт"
+   },
+   "popupTipNoLargeMedia2": {
+      "description": "Tooltip for the no-large-media per-site switch",
+      "message": "Щракнете, за да разрешите големите мултимедийни елементи за този сайт"
+   },
+   "popupTipNoPopups": {
+      "description": "Tooltip for the no-popups per-site switch",
+      "message": "Превключване блокирането на всички изскачащи прозорци за този сайт"
+   },
+   "popupTipNoPopups1": {
+      "description": "Tooltip for the no-popups per-site switch",
+      "message": "Щракнете, за да блокирате всички изскачащи прозорци за този сайт"
+   },
+   "popupTipNoPopups2": {
+      "description": "Tooltip for the no-popups per-site switch",
+      "message": "Щракнете, за да разрешите всички изскачащи прозорци за този сайт"
+   },
+   "popupTipNoRemoteFonts": {
+      "description": "Tooltip for the no-remote-fonts per-site switch",
+      "message": "Превключване блокирането на външни шрифтове за този сайт"
+   },
+   "popupTipNoRemoteFonts1": {
+      "description": "Tooltip for the no-remote-fonts per-site switch",
+      "message": "Щракнете, за да блокирате външните шрифтове за този сайт"
+   },
+   "popupTipNoRemoteFonts2": {
+      "description": "Tooltip for the no-remote-fonts per-site switch",
+      "message": "Щракнете, за да разрешите външните шрифтове за този сайт"
+   },
+   "popupTipNoScripting1": {
+      "description": "Tooltip for the no-scripting per-site switch",
+      "message": "Щракнете, за да забраните JavaScript за този сайт"
+   },
+   "popupTipNoScripting2": {
+      "description": "Tooltip for the no-scripting per-site switch",
+      "message": "Щракнете, за да разрешите JavaScript за този сайт"
+   },
+   "popupTipPicker": {
+      "description": "English: Enter element picker mode",
+      "message": "Блокиране на отделен елемент"
+   },
+   "popupTipRevertRules": {
+      "description": "Tooltip when hovering over the eraser in the dynamic filtering pane.",
+      "message": "Щракнете, за да отмените направените промени."
+   },
+   "popupTipSaveRules": {
+      "description": "Tooltip when hovering over the padlock in the dynamic filtering pane.",
+      "message": "Щракнете, за да направите промените постоянни."
+   },
+   "popupTipZapper": {
+      "description": "Tooltip for the element-zapper icon in the popup panel",
+      "message": "Временно блокиране на отделен елемент"
+   },
+   "popupVersion": {
+      "description": "Example of use: Version 1.26.4",
+      "message": "Версия"
+   },
+   "refresh": {
+      "description": "Generic refresh button label",
+      "message": "Опресняване"
+   },
+   "relaxBlockingMode": {
+      "description": "Label for keyboard shortcut used to relax blocking mode",
+      "message": "Отпуснат режим на блокиране"
+   },
+   "rule": {
+      "description": "Table column header for rule identifier",
+      "message": "Правило"
+   },
+   "rulesCommit": {
+      "description": "This will persist temporary rules",
+      "message": "Приемане"
+   },
+   "rulesDefaultFileName": {
+      "description": "default file name to use",
+      "message": "ublock-мои-правила_{{datetime}}.txt"
+   },
+   "rulesEdit": {
+      "description": "Will enable manual-edit mode (textarea)",
+      "message": "Редактиране"
+   },
+   "rulesEditDiscard": {
+      "description": "Will discard manually-edited content and exit manual-edit mode",
+      "message": "Отказ на промените"
+   },
+   "rulesEditSave": {
+      "description": "Will save manually-edited content and exit manual-edit mode",
+      "message": "Запазване"
+   },
+   "rulesExport": {
+      "description": "Button in the 'My rules' pane",
+      "message": "Изнасяне във файл..."
+   },
+   "rulesFormatHint": {
+      "description": "English: dynamic rule syntax and full documentation.",
+      "message": "Синтаксис на правилото: \u003Ccode>източник цел тип действие\u003C/code> (\u003Ca href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>пълна документация\u003C/a>)."
+   },
+   "rulesHint": {
+      "description": "English: List of your dynamic filtering rules.",
+      "message": "Списък на динамичните правила за филтриране."
+   },
+   "rulesImport": {
+      "description": "",
+      "message": "Внасяне от файл..."
+   },
+   "rulesPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Мои правила"
+   },
+   "rulesPermanentHeader": {
+      "description": "header",
+      "message": "Постоянни правила"
+   },
+   "rulesRevert": {
+      "description": "This will remove all temporary rules",
+      "message": "Връщане"
+   },
+   "rulesSort": {
+      "description": "English: label for sort option.",
+      "message": "Сортиране:"
+   },
+   "rulesSortByDestination": {
+      "description": "English: a sort option for list of rules.",
+      "message": "Дестинация"
+   },
+   "rulesSortBySource": {
+      "description": "English: a sort option for list of rules.",
+      "message": "Източник"
+   },
+   "rulesSortByType": {
+      "description": "English: a sort option for list of rules.",
+      "message": "Тип правило"
+   },
+   "rulesTemporaryHeader": {
+      "description": "header",
+      "message": "Временни правила"
+   },
+   "settingPerSiteSwitchGroup": {
+      "description": "",
+      "message": "Поведение по подразбиране"
+   },
+   "settingPerSiteSwitchGroupSynopsis": {
+      "description": "",
+      "message": "Тези поведения по подразбиране могат да бъдат отменени за отделни сайтове"
+   },
+   "settingsAdvanced": {
+      "description": "Section for controlling advanced-user settings",
+      "message": "Разширени"
+   },
+   "settingsAdvancedSynopsis": {
+      "description": "Description of section controlling advanced-user settings",
+      "message": "Функции, подходящи само за технически грамотни потребители"
+   },
+   "settingsAdvancedUserPrompt": {
+      "description": "Checkbox to let user access advanced, technical features",
+      "message": "Аз съм опитен потребител"
+   },
+   "settingsAdvancedUserSettings": {
+      "description": "For the tooltip of a link which gives access to advanced settings",
+      "message": "разширени настройки"
+   },
+   "settingsAppearance": {
+      "description": "Section for controlling user interface appearance",
+      "message": "Външен вид"
+   },
+   "settingsCloudStorageEnabledPrompt": {
+      "description": "",
+      "message": "Включване на поддръжка за съхранение в облак"
+   },
+   "settingsCollapseBlockedPrompt": {
+      "description": "English: Hide placeholders of blocked elements",
+      "message": "Скриване подсказващите текстове на блокираните елементи"
+   },
+   "settingsColorBlindPrompt": {
+      "description": "English: Color-blind friendly",
+      "message": "Достъпност за хора с нарушено цветоусещане"
+   },
+   "settingsContextMenuPrompt": {
+      "description": "English: Make use of context menu where appropriate",
+      "message": "Използване на контекстното меню, когато е възможно"
+   },
+   "settingsCustomNewTabPrompt": {
+      "description": "English: Custom new tab page",
+      "message": "Персонализирана страница за нов раздел"
+   },
+   "settingsHyperlinkAuditingDisabledPrompt": {
+      "description": "English: ",
+      "message": "Изключване на проверката за препратки"
+   },
+   "settingsIconBadgePrompt": {
+      "description": "English: Show the number of blocked requests on the icon",
+      "message": "Показване на брояч в иконката за блокираните заявки"
+   },
+   "settingsLastBackupPrompt": {
+      "description": "English: Last backup:",
+      "message": "Последно резервно копие:"
+   },
+   "settingsLastRestorePrompt": {
+      "description": "English: Last restore:",
+      "message": "Последно възстановяване:"
+   },
+   "settingsNoCSPReportsPrompt": {
+      "description": "background information: https://github.com/gorhill/uBlock/issues/3150",
+      "message": "Блокиране на CSP отчетите"
+   },
+   "settingsNoCosmeticFilteringPrompt": {
+      "description": "",
+      "message": "Изключване на козметичното филтриране"
+   },
+   "settingsNoLargeMediaPrompt": {
+      "description": "",
+      "message": "Блокиране на мултимедийни елементи, по-големи от {{input}} kB"
+   },
+   "settingsNoRemoteFontsPrompt": {
+      "description": "",
+      "message": "Блокиране на външни шрифтове"
+   },
+   "settingsNoScriptingPrompt": {
+      "description": "The default state for the per-site no-scripting switch",
+      "message": "Забраняване на JavaScript"
+   },
+   "settingsPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Настройки"
+   },
+   "settingsPrefetchingDisabledPrompt": {
+      "description": "English: ",
+      "message": "Изключване на предварителното извличане (за избягване на всяка връзка за блокираните мрежови заявки)"
+   },
+   "settingsStealthModePrompt": {
+      "description": "Uses packaged, fixed redirect resources for a small set of common adblock probes.",
+      "message": "Включване на скрит режим (използване на локални заместители за намаляване на откриването на adblock)"
+   },
+   "settingsThemeAccent0Label": {
+      "description": "Label for checkbox to pick an accent color",
+      "message": "Потребителски цвят на акцента"
+   },
+   "settingsThemeLabel": {
+      "description": "Label for checkbox to enable a custom dark theme",
+      "message": "Тема"
+   },
+   "settingsTooltipsPrompt": {
+      "description": "A checkbox in the Settings pane",
+      "message": "Изключване на поясненията"
+   },
+   "settingsUncloakCnamePrompt": {
+      "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513",
+      "message": "Разкриване на каноничните имена"
+   },
+   "settingsWebRTCIPAddressHiddenPrompt": {
+      "description": "English: ",
+      "message": "Предотвратяване изтичането на локалния IP адрес през WebRTC"
+   },
+   "shortcutCapturePlaceholder": {
+      "description": "Placeholder string for input field used to capture a keyboard shortcut",
+      "message": "Натиснете клавиши"
+   },
+   "shortcutsPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Клавишни комбинации"
+   },
+   "showDashboardButton": {
+      "description": "Firefox/Fennec-specific: Show Dashboard",
+      "message": "Показване на табло"
+   },
+   "showNetworkLogButton": {
+      "description": "Firefox/Fennec-specific: Show Logger",
+      "message": "Показване на дневник за мрежовите заявки"
+   },
+   "smartRulesAddCollection": {
+      "description": "Button to add a new smart rules collection",
+      "message": "Добавяне на колекция"
+   },
+   "smartRulesAddRule": {
+      "description": "Button to add a new smart rule",
+      "message": "Добавяне на правило"
+   },
+   "smartRulesCopyBtn": {
+      "description": "Button to copy exported smart rules to clipboard",
+      "message": "Копиране в клипборда"
+   },
+   "smartRulesEditRule": {
+      "description": "Title for the smart rule editor modal",
+      "message": "Редактиране на правило"
+   },
+   "smartRulesEditorCancel": {
+      "description": "Button to cancel smart rule editing",
+      "message": "Отказ"
+   },
+   "smartRulesEditorSave": {
+      "description": "Button to save smart rule edits",
+      "message": "Запазване"
+   },
+   "smartRulesEditorSelector": {
+      "description": "Label for smart rule CSS selector input",
+      "message": "Селектор"
+   },
+   "smartRulesEditorState": {
+      "description": "Label for smart rule state selector",
+      "message": "Състояние"
+   },
+   "smartRulesEditorTargets": {
+      "description": "Label for smart rule targets input",
+      "message": "Цели"
+   },
+   "smartRulesEditorType": {
+      "description": "Label for smart rule type selector",
+      "message": "Тип"
+   },
+   "smartRulesExportClassicBtn": {
+      "description": "Button to export smart rules in classic format",
+      "message": "Експорт на класически"
+   },
+   "smartRulesExportYamlBtn": {
+      "description": "Button to export smart rules in YAML format",
+      "message": "Експорт на YAML"
+   },
+   "smartRulesImportBtn": {
+      "description": "Button to import smart rules",
+      "message": "Импорт"
+   },
+   "smartRulesImportLabel": {
+      "description": "Label for the YAML import textarea",
+      "message": "Поставете YAML правилата по-долу за импортиране:"
+   },
+   "smartRulesNoRules": {
+      "description": "Empty state message when no smart rules exist",
+      "message": "Все още няма умни правила. Създайте едно, за да започнете."
+   },
+   "smartRulesPageName": {
+      "description": "Title for the smart rules page",
+      "message": "Умни правила"
+   },
+   "smartRulesRefresh": {
+      "description": "Tooltip for the smart rules refresh button",
+      "message": "Опресняване на правилата"
+   },
+   "smartRulesSearch": {
+      "description": "Placeholder for the smart rules search input",
+      "message": "Търсене на правила..."
+   },
+   "smartRulesTabCollections": {
+      "description": "Tab label for smart rules collections",
+      "message": "Колекции"
+   },
+   "smartRulesTabExport": {
+      "description": "Tab label for exporting smart rules",
+      "message": "Експорт"
+   },
+   "smartRulesTabImport": {
+      "description": "Tab label for importing smart rules",
+      "message": "Импорт"
+   },
+   "smartRulesTabRules": {
+      "description": "Tab label for smart rules list",
+      "message": "Правила"
+   },
+   "smartRulesTabTester": {
+      "description": "Tab label for testing smart rules",
+      "message": "Тестер"
+   },
+   "smartRulesTesterTest": {
+      "description": "Button to test smart rules against a URL",
+      "message": "Тест"
+   },
+   "smartRulesTesterURL": {
+      "description": "Label for the tester URL input",
+      "message": "URL за тест:"
+   },
+   "sourceList": {
+      "description": "Table column header for the filter list source",
+      "message": "Списък с източници"
+   },
+   "statsPageName": {
+      "description": "Title for the logger window",
+      "message": "uBlock₀ — Дневник"
+   },
+   "storageUsed": {
+      "description": " In Setting pane, renders as (example): Storage used: 13.2 MB",
+      "message": "Използвано пространство: {{value}} {{unit}}"
+   },
+   "subscribeButton": {
+      "description": "For the button used to subscribe to a filter list",
+      "message": "Абониране"
+   },
+   "time": {
+      "description": "Table column header for time",
+      "message": "Време"
+   },
+   "toggleCosmeticFiltering": {
+      "description": "Label for keyboard shortcut used to toggle cosmetic filtering",
+      "message": "Превключване на козметичното филтриране"
+   },
+   "toggleJavascript": {
+      "description": "Label for keyboard shortcut used to toggle no-scripting switch",
+      "message": "Превключване на JavaScript"
+   },
+   "unknown": {
+      "description": "Generic fallback for unknown values",
+      "message": "неизвестно"
+   },
+   "unprocessedRequestTooltip": {
+      "description": "A warning which will appear in the popup panel if needed",
+      "message": "Не може да се филтрира правилно при стартиране на браузъра.\nПрезаредете страницата, за да се уверите, че филтрирането е правилно."
+   },
+   "whitelistApply": {
+      "description": "English: Apply changes",
+      "message": "Прилагане на промените"
+   },
+   "whitelistExport": {
+      "description": "Button in the 'Trusted sites' pane",
+      "message": "Изнасяне..."
+   },
+   "whitelistExportFilename": {
+      "description": "The default filename to use for import/export purpose",
+      "message": "ublock-доверени_сайтове_{{datetime}}.txt"
+   },
+   "whitelistImport": {
+      "description": "Button in the 'Trusted sites' pane",
+      "message": "Внасяне и добавяне..."
+   },
+   "whitelistPageName": {
+      "description": "appears as tab name in dashboard",
+      "message": "Доверени сайтове"
+   },
+   "whitelistPrompt": {
+      "description": "A concise description of the 'Trusted sites' pane.",
+      "message": "Указанията за доверени сайтове определят кои уеб страници трябва да бъдат изключени от uBlock Origin. По един запис на ред."
+   },
+   "zapperClose": {
+      "description": "Tooltip for the zapper close/quit button",
+      "message": "Затвори (ESC)"
+   },
+   "zapperElementsRemoved": {
+      "description": "Tooltip for the zapper removal count",
+      "message": "Премахнати елементи"
+   },
+   "zapperUndo": {
+      "description": "Tooltip for the zapper undo button",
+      "message": "Отмяна (Ctrl+Z)"
+   }
+}

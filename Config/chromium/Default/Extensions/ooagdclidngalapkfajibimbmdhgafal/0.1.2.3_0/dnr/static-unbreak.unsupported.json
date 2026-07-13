@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-06-29T16:44:33.718Z",
+  "entries": [
+    {
+      "line": 204,
+      "raw": "@@||cdn.jsdelivr.net/npm/react^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 205,
+      "raw": "@@||cdn.jsdelivr.net/npm/vue^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 206,
+      "raw": "@@||cdn.jsdelivr.net/npm/angular^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 207,
+      "raw": "@@||cdn.jsdelivr.net/npm/svelte^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 208,
+      "raw": "@@||unpkg.com/react^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 209,
+      "raw": "@@||unpkg.com/vue^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 210,
+      "raw": "@@||unpkg.com/angular^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 213,
+      "raw": "@@||www.gstatic.com/firebasejs^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 214,
+      "raw": "@@||www.gstatic.com/charts^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 217,
+      "raw": "@@||www.gstatic.com/recaptcha^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 218,
+      "raw": "@@||apis.google.com/js/platform.js^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    },
+    {
+      "line": 219,
+      "raw": "@@||accounts.google.com/gsi^",
+      "reason": "Unrecognized filter form.",
+      "lane": "invalid",
+      "action": "skip-invalid"
+    }
+  ]
+}

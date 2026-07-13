@@ -1,0 +1,96 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: jetbrains-mono-nerd;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: rgb(250, 250, 250);
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+
+#waybar * {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */ 
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+#waybar button,
+#mpdgrp,
+#traygrp,
+#clockgrp,
+#performanceStats,
+#workspaces {
+  background-color: #161F22;
+  color: #81a2be;
+}
+
+#mpdgrp,
+#clockgrp,
+#traygrp,
+#performanceStats,
+#workspaces {
+  border: solid 2px;
+  border-color: #81a2be;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 6px;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+  border-bottom: 2px #8abeb7 solid;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#custom-power,
+#mpd {
+  padding: 0 10px;
+}
+
+#mpdgrp {
+  margin-left: 10px;
+}
+
+#clockgrp {
+  margin-right: 10px;
+}
+
+#window {
+  margin-left: 10px;
+  margin-right: 10px;
+}

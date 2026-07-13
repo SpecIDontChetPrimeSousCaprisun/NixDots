@@ -1,0 +1,15 @@
+{
+  "ruleCount": 256,
+  "safeBlockCount": 256,
+  "safeAllowCount": 0,
+  "regexRuleCount": 0,
+  "cosmeticCount": 0,
+  "limitedSupportedCount": 0,
+  "unsupportedCount": 0,
+  "invalidCount": 0,
+  "badfilterDroppedCount": 0,
+  "badfilterOrphanCount": 0,
+  "badfilterUnsupportedCount": 0,
+  "priorityBand": "packagedHighConfidenceBlock",
+  "generatedAt": "2026-06-29T16:44:33.702Z"
+}

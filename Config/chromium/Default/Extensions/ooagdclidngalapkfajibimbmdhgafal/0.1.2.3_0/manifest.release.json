@@ -1,0 +1,190 @@
+{
+  "author": "Raymond Hill & Damir Olejar & contributors",
+  "background": {
+    "service_worker": "js/sw.js",
+    "type": "module"
+  },
+  "action": {
+    "browser_style": false,
+    "default_icon": {
+      "16": "img/ublock16.png",
+      "32": "img/ublock32.png",
+      "64": "img/ublock64.png"
+    },
+    "default_title": "uBlock Resurrected",
+    "default_popup": "popup-fenix.html"
+  },
+  "default_locale": "en",
+  "storage": {
+    "managed_schema": "managed_schema.json"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "core-mini",
+        "path": "dnr/core-mini.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "static-badware",
+        "path": "dnr/static-badware.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "static-core",
+        "path": "dnr/static-core.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "static-privacy",
+        "path": "dnr/static-privacy.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "static-unbreak",
+        "path": "dnr/static-unbreak.rules.json",
+        "enabled": true
+      }
+    ]
+  },
+  "description": "__MSG_extShortDesc__",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "img/ublock16.png",
+    "32": "img/ublock32.png",
+    "48": "img/ublock48.png",
+    "64": "img/ublock64.png",
+    "96": "img/ublock96.png",
+    "128": "img/ublock128.png",
+    "256": "img/ublock256.png"
+  },
+  "manifest_version": 3,
+  "name": "uBlock Resurrected",
+  "options_page": "dashboard.html",
+  "commands": {
+    "launch-element-zapper": {
+      "description": "__MSG_popupTipZapper__"
+    },
+    "launch-element-picker": {
+      "description": "__MSG_popupTipPicker__"
+    },
+    "launch-logger": {
+      "description": "__MSG_popupTipLog__"
+    },
+    "open-dashboard": {
+      "description": "__MSG_popupTipDashboard__"
+    },
+    "relax-blocking-mode": {
+      "description": "__MSG_relaxBlockingMode__"
+    },
+    "toggle-cosmetic-filtering": {
+      "description": "__MSG_toggleCosmeticFiltering__"
+    },
+    "toggle-javascript": {
+      "description": "__MSG_toggleJavascript__"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "declarativeNetRequest",
+    "idle",
+    "privacy",
+    "scripting",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://chatgpt.com/*",
+        "*://*.chatgpt.com/*"
+      ],
+      "js": [
+        "/js/vapi.js",
+        "/js/vapi-client.js",
+        "/js/contentscript.js",
+        "/js/smart-content.js"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://*.youtube.com/*",
+        "*://youtube.com/*",
+        "*://youtu.be/*",
+        "*://chatgpt.com/*",
+        "*://*.chatgpt.com/*"
+      ],
+      "js": [
+        "/js/ad-block-main.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube-nocookie.com/*",
+        "*://*.youtube-nocookie.com/*"
+      ],
+      "css": [
+        "/css/youtube-adblock.css"
+      ],
+      "js": [
+        "/js/youtube-adblock-main.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    }
+  ],
+  "short_name": "uBlockᵣ",
+  "version": "0.1.2.1",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/web_accessible_resources/*",
+        "/js/epicker-ui-bundle.js",
+        "/css/epicker-ui.css",
+        "/js/vapi-content.js",
+        "/zapper-ui.html",
+        "/css/zapper-ui.css",
+        "/js/scripting/zapper-ui.js",
+        "/js/scripting/tool-overlay-ui.js",
+        "/js/scripting/tool-overlay.js",
+        "/js/scripting/zapper.js",
+        "/js/scripting/dom.js",
+        "/js/scripting/ext.js",
+        "/picker-ui.html",
+        "/css/picker-ui.css",
+        "/js/scripting/picker-ui.js",
+        "/js/scripting/picker.js",
+        "/assets/assets.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

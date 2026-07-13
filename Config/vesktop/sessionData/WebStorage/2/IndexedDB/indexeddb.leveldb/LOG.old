@@ -1,0 +1,6 @@
+2026/07/12-00:07:42.275 e2d Creating DB /home/chevre/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb since it was missing.
+2026/07/12-00:07:42.278 e2d Reusing MANIFEST /home/chevre/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/07/12-00:19:11.148 dec Level-0 table #5: started
+2026/07/12-00:19:11.150 dec Level-0 table #5: 20991 bytes OK
+2026/07/12-00:19:11.152 dec Delete type=0 #3
+2026/07/12-00:19:11.152 dec Manual compaction at level-0 from (begin) .. (end); will stop at (end)
