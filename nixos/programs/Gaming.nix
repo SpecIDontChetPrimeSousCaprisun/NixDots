@@ -6,6 +6,7 @@
     protonup-ng
     prismlauncher
     gamescope
+    openttd
   ];
 
   environment.sessionVariables = {

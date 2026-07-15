@@ -5,7 +5,6 @@
     librewolf
     vesktop
     bat
-    onlyoffice-desktopeditors
     blender
     krita
     unzip

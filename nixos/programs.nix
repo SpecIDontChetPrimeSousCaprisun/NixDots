@@ -8,6 +8,7 @@
       ./programs/Others.nix
       ./programs/Gaming.nix
       ./programs/Drivers.nix
+      ./programs/School.nix
     ];
 
   # Allow unfree packages
