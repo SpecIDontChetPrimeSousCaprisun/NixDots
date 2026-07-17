@@ -16,6 +16,8 @@
      fd         # for file finding
      lazygit    # optional, LazyVim integrates with it
      nodejs     # needed by several LSPs/plugins
+
+     cmakeMinimal
    ];
 
    # add to your configuration.nix
