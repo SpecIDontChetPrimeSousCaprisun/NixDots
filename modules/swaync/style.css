@@ -1,0 +1,23 @@
+.notification {
+    background: rgba(22, 31, 34, 0.5); /* Solarized base03 */
+    border-radius: 12px;
+    margin: 6px;
+    border-radius: 16px;
+    border: 2px solid #81a2be;
+}
+
+.notification-background .notification-row {
+    background: transparent;
+    border: 0
+}
+
+.control-center {
+    background: rgba(22, 31, 34, 0.5);
+    border-radius: 16px;
+    border: 2px solid #81a2be; /* Solarized blue accent */
+}
+
+.widget-title {
+    color: #839496; /* Solarized base0 */
+    font-weight: bold;
+}
