@@ -23,6 +23,7 @@
     cmatrix
     hyprpicker
     brightnessctl
+    quickshell
   ];
 
   programs.hyprland.enable = true;

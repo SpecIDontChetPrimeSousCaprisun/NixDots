@@ -11,6 +11,7 @@
   xdg.configFile."hypr".source = ./modules/hypr;
   xdg.configFile."mpd".source = ./modules/mpd;
   xdg.configFile."nvim".source = ./modules/nvim;
+  xdg.configFile."quickshell".source = ./modules/quickshell;
   xdg.configFile."rofi".source = ./modules/rofi;
   xdg.configFile."swaync".source = ./modules/swaync;
   xdg.configFile."waybar".source = ./modules/waybar;
