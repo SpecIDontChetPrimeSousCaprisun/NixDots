@@ -94,6 +94,10 @@ hl.env("HYPRCURSOR_SIZE", "24")
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
+	ecosystem = {
+		no_update_news = true,
+	},
+
 	general = {
 		gaps_in = 5,
 		gaps_out = 20,

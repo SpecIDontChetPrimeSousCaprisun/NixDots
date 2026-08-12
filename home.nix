@@ -5,8 +5,7 @@
   home.homeDirectory = "/home/chevre";
   home.stateVersion = "26.11";
 
-  xdg.configFile."alacritty".source = ./modules/alacritty;
-  xdg.configFile."btop".source = ./modules/btop;
+  xdg.configFile."alacritty".source = ./modules/alacritty; 
   xdg.configFile."cava".source = ./modules/cava;
   xdg.configFile."fetch".source = ./modules/fetch;
   xdg.configFile."hypr".source = ./modules/hypr;
