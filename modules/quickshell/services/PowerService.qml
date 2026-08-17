@@ -1,0 +1,20 @@
+pragma Singleton
+import Quickshell
+import Quickshell.Io
+import QtQuick
+
+Item {
+  property bool optionsVisible: false
+  property bool shouldChangeOpacity: true
+  property int optionsX: -100
+  property int optionsXTarget: 0
+  property int textOpacity: 0
+  property int hoveredIndex: 0
+  property var powerOptions: [
+    { name: "Shutdown", icon: "", command: [ "shutdown", "-h", "now" ] },
+    { name: "Reboot", icon: "", command: [ "reboot" ] },
+    { name: "Lock", icon: "", command: [ "hyprlock" ] },
+    { name: "Hibernate", icon: "󰒲", command: [ "bash", "-c", "systemctl hibernate && hyprlock" ] },
+    { name: "Sleep", icon: "󰤄", command: [ "bash", "-c", "systemctl suspend && hyprlock" ] }
+  ]
+}

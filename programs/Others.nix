@@ -21,5 +21,6 @@
     kid3
     mpv
     imv
+    pulseaudioFull
   ];
 }
