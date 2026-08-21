@@ -15,6 +15,32 @@ Item {
   property var artists: []
   property var titles: []
   property var bars: []
+  property var lockOptions: [
+    {
+      name: "play",
+      icon: "",
+      state: () => playing,
+      callback: () => {
+        toggleProc.running = true
+      }
+    },
+    {
+      name: "looping",
+      incon: "",
+      state: () => playing,
+      callback: () => {
+
+      }
+    },
+    {
+      name: "random",
+      incon: "",
+      state: () => playing,
+      callback: () => {
+
+      }
+    }
+  ]
  
   function setVolume(value) {
     setVolumeProcess.command = ["mpc", "volume", value.toString()]
@@ -84,6 +110,11 @@ Item {
 
   Component.onCompleted: {
     runListsProc()
+  }
+
+  Process {
+    id: toggleProc
+    command: ["mpc", "toggle"]
   }
 
   Process {

@@ -13,8 +13,8 @@ Item {
   property var powerOptions: [
     { name: "Shutdown", icon: "", command: [ "shutdown", "-h", "now" ] },
     { name: "Reboot", icon: "", command: [ "reboot" ] },
-    { name: "Lock", icon: "", command: [ "hyprlock" ] },
-    { name: "Hibernate", icon: "󰒲", command: [ "bash", "-c", "systemctl hibernate && hyprlock" ] },
-    { name: "Sleep", icon: "󰤄", command: [ "bash", "-c", "systemctl suspend && hyprlock" ] }
+    { name: "Lock", icon: "", command: [ "qs", "ipc", "call", "lock", "lock" ] },
+    { name: "Hibernate", icon: "󰒲", command: [ "bash", "-c", "systemctl hibernate && qs ipc call lock lock" ] },
+    { name: "Sleep", icon: "󰤄", command: [ "bash", "-c", "systemctl suspend && qs ipc call lock lock" ] }
   ]
 }

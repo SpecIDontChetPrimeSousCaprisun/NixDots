@@ -3,6 +3,7 @@ import Quickshell
 import QtQuick
 import "modules"
 import "modules/Taskbar"
+import "modules/lockScreen"
 
 ShellRoot {
   Taskbar {}
@@ -14,4 +15,5 @@ ShellRoot {
   Notifications {}
   NC {}
   Git {}
+  LockScreen {}
 }

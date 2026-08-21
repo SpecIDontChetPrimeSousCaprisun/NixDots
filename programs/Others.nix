@@ -22,5 +22,25 @@
     mpv
     imv
     pulseaudioFull
+    thunar
+    transmission_4
+    ventoy
+  ];
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    pulse.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+    ];
+  };
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "ventoy-1.1.12"
   ];
 }

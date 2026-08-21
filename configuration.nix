@@ -11,6 +11,8 @@
       ./Bootloader.nix
     ];
 
+  security.pam.services.quickshell-lock = {};
+
   # Home manager
   home-manager.useUserPackages = true;
   home-manager.useGlobalPkgs = true;
