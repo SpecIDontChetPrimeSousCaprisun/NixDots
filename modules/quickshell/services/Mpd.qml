@@ -9,6 +9,8 @@ Item {
   property int volume: 0
   property bool windowVisible: false
   property bool playing: false
+  property bool looping: false
+  property bool random: false
   property bool titleFinished: false
   property string elapsed: "0:00"
   property string duration: "0:00"
@@ -18,7 +20,6 @@ Item {
   property var lockOptions: [
     {
       name: "play",
-      icon: "",
       state: () => playing,
       callback: () => {
         toggleProc.running = true
@@ -26,21 +27,27 @@ Item {
     },
     {
       name: "looping",
-      incon: "",
-      state: () => playing,
+      state: () => looping,
       callback: () => {
-
+        toggleLoop()
       }
     },
     {
       name: "random",
-      incon: "",
-      state: () => playing,
+      state: () => random,
       callback: () => {
-
+        toggleRandom()
       }
     }
   ]
+
+  function toggleLoop() {
+    toggleLoopProc.running = true
+  }
+
+  function toggleRandom() {
+    toggleRandomProc.running = true
+  }
  
   function setVolume(value) {
     setVolumeProcess.command = ["mpc", "volume", value.toString()]
@@ -113,6 +120,46 @@ Item {
   }
 
   Process {
+    id: toggleLoopProc
+    command: ["mpc", "repeat"]
+    onRunningChanged: if (!running) statusProcess.running = true
+  }
+
+  Process {
+    id: toggleRandomProc
+    command: ["mpc", "random"]
+    onRunningChanged: if (!running) statusProcess.running = true
+  }
+
+  Process {
+    id: statusProcess
+    command: ["mpc", "status"]
+    running: true
+
+    stdout: SplitParser {
+      onRead: data => {
+        let stateMatch = data.match(/\[(playing|paused)\]/)
+        if (stateMatch) playing = stateMatch[1] === "playing"
+
+        let timeMatch = data.match(/(\d+:\d+)\/(\d+:\d+)/)
+        if (timeMatch) {
+          elapsed = timeMatch[1]
+          duration = timeMatch[2]
+        }
+
+        let volMatch = data.match(/volume:\s*(\d+)%/)
+        if (volMatch) volume = parseInt(volMatch[1])
+
+        let repeatMatch = data.match(/repeat:\s*(on|off)/)
+        if (repeatMatch) looping = repeatMatch[1] === "on"
+
+        let randomMatch = data.match(/random:\s*(on|off)/)
+        if (randomMatch) random = randomMatch[1] === "on"
+      }
+    }
+  }
+
+  Process {
     id: toggleProc
     command: ["mpc", "toggle"]
   }
@@ -180,28 +227,6 @@ Item {
 
     onExited: {
       waitForTitle(reorderTitles)
-    }
-  }
-
-  Process {
-    id: statusProcess
-    command: ["mpc", "status"]
-    running: true
-
-    stdout: SplitParser {
-      onRead: data => {
-        let stateMatch = data.match(/\[(playing|paused)\]/)
-        if (stateMatch) playing = stateMatch[1] === "playing"
-
-        let timeMatch = data.match(/(\d+:\d+)\/(\d+:\d+)/)
-        if (timeMatch) {
-          elapsed = timeMatch[1]
-          duration = timeMatch[2]
-        }
-
-        let volMatch = data.match(/volume:\s*(\d+)%/)
-        if (volMatch) volume = parseInt(volMatch[1])
-      }
     }
   }
 

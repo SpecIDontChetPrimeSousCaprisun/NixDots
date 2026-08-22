@@ -15,6 +15,7 @@ Item {
 
       property real scrollY: textClip.height + text.width
 
+      horizontalAlignment: Text.AlignHCenter
       text: Services.Mpd.title + " - " +
             Services.Mpd.artist + " " +
             Services.Mpd.elapsed + " / " +
@@ -46,10 +47,24 @@ Item {
       Repeater {
         model: Services.Mpd.lockOptions
         delegate: ColumnLayout {
-          Rectangle {
+          Text {
+            Layout.fillWidth: true
+            id: text
+            horizontalAlignment: Text.AlignHCenter
+            text: modelData.name
+            color: Services.ColorService.accent
+            font {
+                family: "Jetbrains Mono Nerd"
+                letterSpacing: -1
+                pixelSize: 15
+                weight: 600
+            }
+          }
+
+          Rectangle { 
+            Layout.fillWidth: true
             radius: 12
-            width: 90
-            height: 40
+            height: 25
             color: modelData.state() ? Services.ColorService.accent : Services.ColorService.background 
             border {
               color: modelData.state() ? Services.ColorService.background : Services.ColorService.accent
@@ -57,12 +72,17 @@ Item {
             }
 
             Rectangle {
-              x: 20 - (width / 2)
-              y: 20 - (height / 2)
+              x: modelData.state() ? parent.width - 12.5 - (width / 2) : 12.5 - (width / 2)
+              y: 12.5 - (height / 2)
               radius: 12
-              height: 30
-              width: 30
+              height: 15
+              width: 15
               color: modelData.state() ? Services.ColorService.background : Services.ColorService.accent
+            }
+
+            MouseArea {
+              anchors.fill: parent
+              onClicked: modelData.callback()
             }
           }
         }
