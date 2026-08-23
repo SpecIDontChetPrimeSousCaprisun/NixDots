@@ -16,4 +16,5 @@ ShellRoot {
   NC {}
   Git {}
   LockScreen {}
+  AppLauncher {}
 }

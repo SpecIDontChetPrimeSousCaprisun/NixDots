@@ -12,6 +12,7 @@
     starship
     mpd
     mpc
+    rmpc
     swaynotificationcenter
     awww
     wlogout
