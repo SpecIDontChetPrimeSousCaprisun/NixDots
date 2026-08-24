@@ -99,22 +99,13 @@ PanelWindow {
           }
 
           function launch() {
-            cmdProc.running = true
+            let cmd = modelData.command
+
+            if (Services.AppService.useOffload) cmd = ["nvidia-offload", ...cmd]
+            if (modelData.runInTerminal) cmd = ["alacritty", "-e", ...cmd]
+
+            Quickshell.execDetached(cmd)
             Services.AppService.launcherVisible = false
-          }
-
-          Process {
-            id: cmdProc
-            command: {
-              let cmd = modelData.command
-
-              if (Services.AppService.useOffload) cmd.unshift("nvidia-offload");
-              if (modelData.runInTerminal) {
-                cmd.unshift("alacritty", "-e")
-              }
-
-              return cmd
-            }
           }
 
           RowLayout {
@@ -142,8 +133,7 @@ PanelWindow {
                 anchors.fill: parent
 
                 onClicked: {
-                  cmdProc.running = true
-                  Services.AppService.launcherVisible = false
+                  launch()
                 }
               }
             }

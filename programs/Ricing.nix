@@ -28,6 +28,7 @@
   ];
 
   programs.hyprland.enable = true;
+  programs.mango.enable = true;
   
   programs.zsh.enable = true;
   users.users.chevre.shell = pkgs.zsh;
