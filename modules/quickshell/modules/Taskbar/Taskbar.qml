@@ -41,6 +41,7 @@ Variants {
       hoverEnabled: true
       acceptedButtons: Qt.NoButton
       onEntered: {
+        Services.WorkspaceService.currentScreenName = modelData.name
         Services.WorkspaceService.widgetVisible = true
         Services.WorkspaceService.widgetY = Services.WorkspaceService.yGoal
       }

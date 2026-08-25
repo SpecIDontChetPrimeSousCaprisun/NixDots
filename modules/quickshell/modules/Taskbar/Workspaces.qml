@@ -44,12 +44,12 @@ PanelWindow {
       anchors.centerIn: parent
 
       Repeater {
-        model: 9
+        model: Services.WorkspaceService.tags[Services.WorkspaceService.currentScreenName]
 
         Text {
-          property bool isActive: Hyprland.focusedWorkspace?.id === (index + 1)
+          property bool isActive: modelData["is_active"]
           property bool hovered: false
-          text: index + 1
+          text: modelData["index"]
           color: isActive ? Services.ColorService.highlight : Services.ColorService.accent
           opacity: workspacesWidget.width === workspaces.implicitWidth + 12 ? 1.0 : 0.0
 
@@ -79,8 +79,7 @@ PanelWindow {
             onEntered: parent.hovered = true
             onExited: parent.hovered = false
             onClicked: {
-              switchWorkspace.command = ["hyprctl", "dispatch", "hl.dsp.focus({ workspace = " + '"' + (index + 1).toString() + '"' + "})"]
-              switchWorkspace.running = true
+              Services.WorkspaceService.switchWorkspace(modelData["index"])
               Services.WorkspaceService.widgetVisible = false
               Services.WorkspaceService.widgetY = -10
             }

@@ -25,6 +25,7 @@
     thunar
     transmission_4
     ventoy
+    profanity
   ];
 
   services.pipewire = {

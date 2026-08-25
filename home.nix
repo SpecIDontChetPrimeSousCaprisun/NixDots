@@ -9,7 +9,7 @@
   xdg.configFile."cava".source = ./modules/cava;
   xdg.configFile."fetch".source = ./modules/fetch;
   xdg.configFile."hypr".source = ./modules/hypr;
-  xdg.configFile."mango".source = ./modules/mango;
+  # xdg.configFile."mango".source = ./modules/mango;
   xdg.configFile."mpd".source = ./modules/mpd;
   xdg.configFile."nvim".source = ./modules/nvim;
   xdg.configFile."quickshell".source = ./modules/quickshell;
