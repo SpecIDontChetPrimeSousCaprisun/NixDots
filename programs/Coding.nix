@@ -12,6 +12,7 @@
      gdb
      linuxPackages.perf 
      flamegraph
+     tmux
 
      neovim
      vimPlugins.LazyVim

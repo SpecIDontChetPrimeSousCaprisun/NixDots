@@ -15,6 +15,7 @@
   xdg.configFile."quickshell".source = ./modules/quickshell;
   xdg.configFile."rofi".source = ./modules/rofi;
   xdg.configFile."swaync".source = ./modules/swaync;
+  xdg.configFile."tmux".source = ./modules/tmux;
   xdg.configFile."waybar".source = ./modules/waybar;
   xdg.configFile."wlogout".source = ./modules/wlogout;
   xdg.configFile."vesktop/settings/quickCss.css".source = ./modules/quickCss.css;
