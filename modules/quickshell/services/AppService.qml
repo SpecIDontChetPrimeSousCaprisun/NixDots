@@ -18,6 +18,7 @@ Item {
     target: "launcher"
     function open(): void {
       launcherVisible = !launcherVisible
+      TmuxService.refresh()
     }
   }
 }

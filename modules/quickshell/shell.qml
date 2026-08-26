@@ -17,4 +17,5 @@ ShellRoot {
   Git {}
   LockScreen {}
   AppLauncher {}
+  Cheatsheet {}
 }

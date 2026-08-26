@@ -61,6 +61,26 @@ Widget {
     }
 
     Text {
+      id: sheetText
+      text: ""
+      color: Services.ColorService.accent
+      font {
+        family: "Jetbrains Mono Nerd"
+        letterSpacing: -1
+        pixelSize: 15
+        weight: 600
+      }
+    }
+
+    MouseArea {
+      parent: sheetText
+      anchors.fill: parent
+      onClicked: {
+        Services.CheatsheetService.windowVisible = !Services.CheatsheetService.windowVisible
+      }
+    }
+
+    Text {
       id: volumeText
       text: "󰋋 " + Math.round(Services.VolumeService.speakerVolume * 100) + "%" // muted : 󰟎
       color: Services.ColorService.accent

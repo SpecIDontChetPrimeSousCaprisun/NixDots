@@ -14,7 +14,7 @@ Item {
     { name: "Shutdown", icon: "", command: [ "shutdown", "-h", "now" ] },
     { name: "Reboot", icon: "", command: [ "reboot" ] },
     { name: "Lock", icon: "", command: [ "qs", "ipc", "call", "lock", "lock" ] },
-    { name: "Hibernate", icon: "󰒲", command: [ "bash", "-c", "systemctl hibernate && qs ipc call lock lock" ] },
-    { name: "Sleep", icon: "󰤄", command: [ "bash", "-c", "systemctl suspend && qs ipc call lock lock" ] }
+    { name: "Hibernate", icon: "󰒲", command: [ "qs", "ipc", "call", "lock", "hibernate" ] },
+    { name: "Sleep", icon: "󰤄", command: [ "qs", "ipc", "call", "lock", "sleep" ] }
   ]
 }

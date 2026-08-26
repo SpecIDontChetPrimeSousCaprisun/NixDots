@@ -9,3 +9,5 @@ singleton NotificationService 1.0 NotificationService.qml
 singleton Git 1.0 Git.qml
 singleton VolumeService 1.0 VolumeService.qml
 singleton AppService 1.0 AppService.qml
+singleton CheatsheetService 1.0 CheatsheetService.qml
+singleton TmuxService 1.0 TmuxService.qml

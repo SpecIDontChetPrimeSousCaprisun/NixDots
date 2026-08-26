@@ -158,6 +158,20 @@ Item {
         lock.locked = true
       }) 
     }
+
+    function hibernate(): void {
+      captureAllScreens(() => {
+        lock.locked = true
+        hibernateProc.running = true
+      }) 
+    }
+
+    function sleep(): void {
+      captureAllScreens(() => {
+        lock.locked = true
+        sleepProc.running = true
+      }) 
+    }
   }
 
   function authenticate(passwd) {
@@ -186,5 +200,15 @@ Item {
     onExited: {
       console.log("PAM helper exited:", exitCode)
     }
+  }
+
+  Process {
+    id: hibernateProc
+    command: ["systemctl", "hibernate"]
+  }
+
+  Process {
+    id: sleepProc
+    command: ["systemctl", "suspend"]
   }
 }

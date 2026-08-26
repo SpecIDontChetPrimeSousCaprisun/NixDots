@@ -31,7 +31,6 @@ Item {
           }
 
           tags = newTags
-          console.log("Mango tags:", JSON.stringify(tags))
         } catch (e) {
           console.log("Failed to parse Mango IPC:", data, " ", e)
         }
