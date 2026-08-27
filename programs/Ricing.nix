@@ -5,9 +5,9 @@
     hyprland
     hyprlock
     waybar
-    alacritty
+    kitty
     rofi
-    fetch
+    fastfetch 
     yazi
     starship
     mpd

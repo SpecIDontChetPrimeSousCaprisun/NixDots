@@ -5,9 +5,9 @@
   home.homeDirectory = "/home/chevre";
   home.stateVersion = "26.11";
 
-  xdg.configFile."alacritty".source = ./modules/alacritty; 
+  xdg.configFile."fastfetch".source = ./modules/fastfetch;
+  xdg.configFile."kitty".source = ./modules/kitty;
   xdg.configFile."cava".source = ./modules/cava;
-  xdg.configFile."fetch".source = ./modules/fetch;
   xdg.configFile."hypr".source = ./modules/hypr;
   xdg.configFile."mango".source = ./modules/mango;
   xdg.configFile."mpd".source = ./modules/mpd;
