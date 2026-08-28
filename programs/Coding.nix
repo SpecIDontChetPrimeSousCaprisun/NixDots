@@ -13,6 +13,7 @@
      linuxPackages.perf 
      flamegraph
      tmux
+     rustup
 
      neovim
      vimPlugins.LazyVim

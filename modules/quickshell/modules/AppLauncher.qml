@@ -99,7 +99,7 @@ PanelWindow {
           }
 
           function launch() {
-            let cmd = ["alacritty", "-e", "tmux", "attach", "-t", modelData]
+            let cmd = ["kitty", "tmux", "attach", "-t", modelData]
 
             Quickshell.execDetached(cmd)
             Services.AppService.launcherVisible = false
@@ -159,7 +159,7 @@ PanelWindow {
             let cmd = modelData.command
 
             if (Services.AppService.useOffload) cmd = ["nvidia-offload", ...cmd]
-            if (modelData.runInTerminal) cmd = ["alacritty", "-e", ...cmd]
+            if (modelData.runInTerminal) cmd = ["kitty", ...cmd]
 
             Quickshell.execDetached(cmd)
             Services.AppService.launcherVisible = false

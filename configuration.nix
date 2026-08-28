@@ -9,6 +9,7 @@
       ./hardware-configuration.nix # Include the results of the hardware scan.
       ./programs.nix
       ./Bootloader.nix
+      ./hosts.nix
     ];
 
   security.pam.services.quickshell-lock = {};
