@@ -8,6 +8,7 @@
     gamescope
     openttd
     exfatprogs
+    r2modman
   ];
 
   environment.sessionVariables = {

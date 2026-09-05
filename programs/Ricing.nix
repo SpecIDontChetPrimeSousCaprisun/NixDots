@@ -25,6 +25,7 @@
     hyprpicker
     brightnessctl
     quickshell
+    xremap
   ];
 
   programs.hyprland.enable = true;

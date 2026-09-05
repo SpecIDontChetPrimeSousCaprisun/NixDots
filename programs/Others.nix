@@ -25,7 +25,7 @@
     thunar
     transmission_4
     ventoy
-    profanity
+    parted
   ];
 
   services.pipewire = {
