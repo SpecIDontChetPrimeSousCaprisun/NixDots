@@ -1,8 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
-    hyprland
     hyprlock
     waybar
     kitty
@@ -28,7 +27,6 @@
     xremap
   ];
 
-  programs.hyprland.enable = true;
   programs.mango.enable = true;
   
   programs.zsh.enable = true;

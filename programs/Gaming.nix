@@ -47,7 +47,7 @@
   '';
   security.polkit.enable = true;
 
-  fileSystems."/mnt/games" = {
+  /*fileSystems."/mnt/games" = {
     device = "/dev/disk/by-uuid/6AED-81B7";
     fsType = "exfat";
     options = [
@@ -56,6 +56,6 @@
       "gid=1000"
       "umask=0022"
     ];
-  };
+  };*/
 }
 

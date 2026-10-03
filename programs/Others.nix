@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    librewolf
     vesktop
     bat
     blender
@@ -26,6 +25,7 @@
     transmission_4
     ventoy
     parted
+    obsidian
   ];
 
   services.pipewire = {

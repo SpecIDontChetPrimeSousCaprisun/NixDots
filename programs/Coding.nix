@@ -2,6 +2,7 @@
 
 {
    environment.systemPackages = with pkgs; [
+     devenv
      git
      gnumake
      gcc
@@ -37,6 +38,8 @@
      nodejs     # needed by several LSPs/plugins
 
      cmakeMinimal
+     go
+     ghgrab
    ];
 
    # add to your configuration.nix
