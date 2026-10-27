@@ -9,7 +9,6 @@
      python3
      butler
      emscripten
-     aseprite
      gdb
      linuxPackages.perf 
      flamegraph

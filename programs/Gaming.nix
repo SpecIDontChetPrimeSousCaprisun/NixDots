@@ -47,6 +47,8 @@
   '';
   security.polkit.enable = true;
 
+  services.flatpak.enable = true;
+
   /*fileSystems."/mnt/games" = {
     device = "/dev/disk/by-uuid/6AED-81B7";
     fsType = "exfat";

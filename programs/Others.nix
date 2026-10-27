@@ -26,6 +26,8 @@
     ventoy
     parted
     obsidian
+    spotify
+    librewolf
   ];
 
   services.pipewire = {
