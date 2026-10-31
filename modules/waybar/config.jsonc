@@ -1,0 +1,80 @@
+{
+  "layer": "top", // Waybar at top layer
+  "exclusive": true,
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 40, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "reload_style_on_change": true,
+  "include": [
+    "~/.config/waybar/Modules/all_modules.jsonc"
+  ],
+
+  "modules-left": [
+    "group/mpdgrp"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "group/traygrp",
+    "group/performanceStats",
+    "group/clockgrp"
+  ],
+
+  "group/mpdgrp": {
+    "orientation": "horizontal",
+    "modules": [ "mpd" ]
+  },
+
+  "group/traygrp": {
+    "orientation": "horizontal",
+    "modules": [ "tray" ]
+  },
+
+  "group/performanceStats": {
+    "orientation": "horizontal",
+    "modules": [ "cpu", "temperature", "memory" ]
+  },
+
+  "group/clockgrp": {
+    "orientation": "horizontal",
+    "modules": [ "clock", "custom/power" ]
+  },
+
+  "mpd": {
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon} {singleIcon}{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}%",
+    "format-disconnected": "Disconnected <span color=\"#f53c3c\"></span>",
+    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped <span color=\"#f53c3c\"></span>",
+    "unknown-tag": "N/A",
+    "interval": 5,
+    "consume-icons": {
+        "on": " "
+    },
+    "random-icons": {
+        "off": "<span color=\"#f53c3c\"></span> ",
+        "on": " "
+    },
+    "repeat-icons": {
+        "off": "<span color=\"#f53c3c\"></span> ",
+        "on": " "
+    },
+    "single-icons": {
+        "on": "1 "
+    },
+    "state-icons": {
+        "paused": "",
+        "playing": ""
+    },
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)",
+    "on-click": "mpc toggle",
+    "on-click-right": "mpc next",
+    "on-click-middle": "mpc prev",
+    "on-scroll-up": "mpc volume +5",
+    "on-scroll-down": "mpc volume -5"
+  }
+}
